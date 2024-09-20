@@ -32,8 +32,7 @@ function App() {
   const handlePasswordChange = (e) => {
     setFormValues({ ...formValues, password: e.target.value });
     // Validar si la contraseña tiene más de 8 caracteres en tiempo real
-     // Validar la contraseña
-    const hasMinLength = e.target.value.length >= 9;
+    const hasMinLength = e.target.value.length >= 9; //verifica la longitud
     const hasLetter = /[a-zA-Z]/.test(e.target.value); // Verifica si hay letras
     const hasNumber = /\d/.test(e.target.value); // Verifica si hay números
     // Actualizar el estado de validación
